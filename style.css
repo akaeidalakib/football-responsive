@@ -1,0 +1,196 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* global style */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Start copa america section style */
+.container{
+    width:1050px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.flexible-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+    background-color: rgb(5, 5, 163);
+}
+.half-width{
+width: 50%;
+
+}
+.half-width img{
+    width: 100%;    
+}
+.copa-america{
+    margin-left: 5%;
+}
+.copa-america h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+/* Start button style */
+
+.link-button{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #E02C6D;
+    transition: all .3s;
+}
+
+.link-button:hover {
+    transform: translateY(-10px);
+    transition: 1s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    
+}
+.link-button {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left:50%;
+    }
+  
+    to {
+      margin-left:0%;
+    }
+  }
+
+/* end button style */
+
+/* End copa america section style */
+
+/* Start article player style */
+
+.player{
+    align-items:center;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);   
+}
+
+.player img{
+    width: 300px;
+    height: 250px
+}
+/* End article player style */
+
+/* start  Copa America Highlights Section style */
+.section-container{
+    display: flex;
+    align-items: center;
+    width: 1120px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+.Highlights-copa{
+    font-size: 64px;
+    font-weight: 700;
+    color: black;
+}
+/* End  Copa America Highlights Section style */
+
+/* host city style */
+.host-city{
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15); 
+    padding: 15px;
+}
+#hc-title{
+    font-size: 50px;
+    text-align: justify;
+    margin-left: 25%;
+}
+.city-title{
+    font-family: Ubuntu, Arial, sans-serif;
+    font: size 28px;
+    font-weight: 700;
+    color: #173562;
+}
+/* footer style */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo img{
+    width: 483.87px;
+}
+.fab{
+    font-size:20px;
+    color: gray;
+    padding: 10px;
+    background-color:rgba(128, 128, 128, 0.096);
+    border-radius: 50%;
+}
+
+/* media queries */
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .container, .section-container{
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+        
+    }
+    .flexible-container, .half-width{
+        width:100%;
+    }
+    .flexible-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+/* Tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
+        
+    }
+    .flexible-container, .half-width{
+        width:100%;
+    }
+    .flexible-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-container{
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) 
+    }
+}
+/* End media queries */
